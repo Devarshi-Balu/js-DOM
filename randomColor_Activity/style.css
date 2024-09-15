@@ -1,0 +1,15 @@
+div.container {
+    display : flex ;
+    flex-direction: column;
+    align-items : center;
+    
+}
+
+
+div.color_displayer {
+    background-color: rgb(192, 190, 61);
+    width : 50%;
+    height : 400px ;
+    margin : 20px  auto 20px  auto ;
+
+}

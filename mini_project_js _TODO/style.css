@@ -1,0 +1,49 @@
+.deleteButton {
+    color: rgb(128 128 165);
+    background-color: rgb(173, 255, 47, 0.6);
+    font-size: 0.85rem;
+    width: 64px;
+    height: 26px;
+    display: inline-block;
+    font-weight: 600;
+    vertical-align: middle;
+    padding: 0px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.container  div input{
+
+    width : 700px ;
+    height : 40px;
+    background-color : rgb(154, 205, 50, 0.5);
+    font-size : 1.25rem;
+    color : rgb(12, 10, 10);
+}
+
+
+button {
+    width : 120px ; 
+    height: 40px ;
+    display : inline-block;
+    padding :10px ;
+    font-weight :600 ;
+    
+
+}
+
+.taskList ul{
+    width : 900px;
+    height: 900px;
+    background-color: rgb(224, 224, 170, 0.5);
+    
+}
+
+.taskList ul li {
+    font-size : 1.15rem;
+    line-height: 1.5;
+    list-style-type:decimal;
+    
+}
+
