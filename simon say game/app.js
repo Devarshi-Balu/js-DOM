@@ -25,14 +25,39 @@ function levelUp() {
     let randomColor = colors[randomIdx];
 
     let button = document.querySelector(`.${randomColor}`);
-    btnFlash(button);
+    console.log(`flashing the button with color ${randomColor}`);  
+    gameFlash(button);
     
 }
 
-function btnFlash(btn) {
+function gameFlash(btn) {
     btn.classList.add("flash");
     setTimeout(function (){
         btn.classList.remove("flash");
-    },0.225*1000);
+    },0.4*1000);
 }
 
+function userFlash(btn) {
+    //some code
+    
+
+    btn.classList.add("userFlash");
+    setTimeout(function (){
+        btn.classList.remove("userFlash");
+    },0.4*1000);
+}
+
+
+// add event listeners to all the buttons 
+
+let allButtons = document.querySelectorAll('.btn');
+
+for (let i = 0; i < allButtons.length; i++) {
+    allButtons[i].addEventListener("click", btnPress); 
+}
+
+
+function btnPress() {
+    let btn = this;
+    userFlash(this);
+}
